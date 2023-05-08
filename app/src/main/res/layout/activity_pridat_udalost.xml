@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/praTypSportu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".UI.PridatUdalostActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primaryColor"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/praZpetIV"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/praNadpis"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_sipka_zpet" />
+
+                <TextView
+                    android:id="@+id/praNadpis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Přidat Událost"
+                    android:textColor="@color/primaryText"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/primaryColor"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/praNazevUdalostiInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_border"
+                    android:ems="10"
+                    android:hint="Název události"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/primaryText" />
+
+                <EditText
+                    android:id="@+id/praKdoSePrihlasiInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Vyberte, kdo se může na událost přihlásit"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/primaryText" />
+
+                <EditText
+                    android:id="@+id/praTypSportuInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Vyberte druh sportu"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/primaryText" />
+
+                <EditText
+                    android:id="@+id/praDatumInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Vyberte datum"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/primaryText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/praOdKdyInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_border"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Začátek"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/primaryText"
+                        android:textColorHint="@color/primaryText"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/praDoKdyInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_border"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Konec"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/primaryText"
+                        android:textColorHint="@color/primaryText"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/praKapacitaInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_border"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Vyberte kapacitu události"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/primaryText" />
+
+                <EditText
+                    android:id="@+id/praMistoInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_border"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Vyberte místo"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/primaryText" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/praVytvoritUdalostBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_border"
+                android:text="Přidat událost"
+                android:textColor="@color/primaryText"
+                android:textColorHint="@color/primaryText" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

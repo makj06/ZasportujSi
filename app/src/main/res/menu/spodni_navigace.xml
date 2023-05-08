@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mojeUdalosti"
+        android:title="Události"
+        android:icon="@drawable/ic_udalost" />
+
+    <item
+        android:id="@+id/udalost"
+        android:title="Vyhledat událost"
+        android:icon="@drawable/ic_vyhledat" />
+        <item
+        android:id="@+id/sportoviste"
+        android:title="Vyhledat sportoviště"
+        android:icon="@drawable/ic_mapa" />
+    <item
+        android:id="@+id/home"
+        android:title="Profil"
+        android:icon="@drawable/ic_osoba" />
+</menu>

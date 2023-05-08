@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ZasportujSi</string>
+
+
+    <string name="facebook_app_id">1913651292306992</string>
+    <string name="fb_login_protocol_scheme">fb1913651292306992</string>
+    <string name="facebook_client_token">c260448125e6d82302ffa421903b2618</string>
+
+
+
+    <string-array name="proKoho">
+        <item>Všichni</item>
+        <item>Přátelé</item>
+    </string-array>
+
+    <string-array name="sporty">
+        <item>Florbal</item>
+        <item>Fotbal</item>
+        <item>Basketbal</item>
+        <item>Tenis</item>
+        <item>Ostatní</item>
+    </string-array>
+
+
+</resources>
